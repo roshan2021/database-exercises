@@ -23,3 +23,5 @@ WHERE hire_date BETWEEN '1990-01-01' AND '1999-12-31'
 ORDER BY birth_date, hire_date DESC
 LIMIT 5 OFFSET 45;
 
+-- To figure out what offset should be we can multiply (Limit * (Page Number - 1))
+-- (5 * (10-1)) = 45
